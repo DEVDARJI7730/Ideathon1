@@ -1,0 +1,148 @@
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'WixMadeforText';
+  src: url('url("/static/media/WixMadeforTextApp-Regular_1048040404.b682f51962b316f3cd85.ttf") format("truetype")');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'WixMadeforText';
+  src: url('url("/static/media/WixMadeforTextApp-Italic_3654762839.aee29983d65a238f2a37.ttf") format("truetype")');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'WixMadeforText';
+  src: url('url("/static/media/WixMadeforText-Medium.b4ba8f598cc07ff557ce.woff2") format("woff2")');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'WixMadeforText';
+  src: url('url("/static/media/WixMadeforText-SemiBold.113c3e50164b8078006b.woff2") format("woff2")');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'WixMadeforText';
+  src: url('url("/static/media/WixMadeforTextApp-Bold_2128642432.8ba0193239652ef62203.ttf") format("truetype")');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'WixMadeforText';
+  src: url('url("/static/media/WixMadeforTextApp-BoldItalic_2607598812.bbf5e11dd9c3d70c53ff.ttf") format("truetype")');
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'WixMadeforText';
+  src: url('url("/static/media/WixMadeforTextApp-ExtraBold_3671583625.3ce3867ed6d028d46279.ttf") format("truetype")');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'WixMadeforText';
+  src: url('url("/static/media/WixMadeforTextApp-ExtraBoldItalic_1707253935.6a772a7d9a639b43fea3.ttf") format("truetype")');
+  font-weight: 800;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'WixMadeforText';
+  src: url('url("/static/media/WixMadeforTextApp-Regular_1048040404.b682f51962b316f3cd85.ttf") format("truetype")');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 47.4% 11.2%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 47.4% 11.2%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+
+    --card: transparent;
+    --card-foreground: 222.2 47.4% 11.2%;
+
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 100% 50%;
+    --destructive-foreground: 210 40% 98%;
+
+    --ring: 215 20.2% 65.1%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 224 71% 4%;
+    --foreground: 213 31% 91%;
+
+    --muted: 223 47% 11%;
+    --muted-foreground: 215.4 16.3% 56.9%;
+
+    --accent: 216 34% 17%;
+    --accent-foreground: 210 40% 98%;
+
+    --popover: 224 71% 4%;
+    --popover-foreground: 215 20.2% 65.1%;
+
+    --border: 216 34% 17%;
+    --input: 216 34% 17%;
+
+    --card: transparent;
+    --card-foreground: 213 31% 91%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 1.2%;
+
+    --secondary: 222.2 47.4% 11.2%;
+    --secondary-foreground: 210 40% 98%;
+
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 210 40% 98%;
+
+    --ring: 216 34% 17%;
+
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
