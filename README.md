@@ -1,2 +1,1 @@
-# Ideathon1
-Code for Ideathon 
+Deepfake and Scam Content Detection 
